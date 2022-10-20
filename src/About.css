@@ -1,0 +1,35 @@
+.brd {
+    border-bottom: 1px solid;
+    margin: 2rem;
+}
+
+.bck
+{
+    background-color: #f7f7f7;
+}
+.zoomk:hover {
+    transform: scale(1.150);
+
+}
+
+.zoomk {
+    transition: 500ms;
+}
+.zooml:hover {
+    transform: scale(1.050);
+
+}
+
+.zooml {
+    transition: 500ms;
+}
+.ad{
+    text-decoration: none;
+    font-style: inherit;
+    color: inherit;
+}
+.ad:hover{
+    text-decoration: none;
+        font-style: inherit;
+        color: inherit;
+    }
