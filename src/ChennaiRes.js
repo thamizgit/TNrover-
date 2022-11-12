@@ -9,7 +9,7 @@ import Button from 'react-bootstrap/Button';
 
 import { toBeRequired } from "@testing-library/jest-dom/dist/matchers";
 
-function ChennaiHospital(){
+function ChennaiRestaurants(){
     return(
         <div>
             
@@ -284,4 +284,4 @@ function ChennaiHospital(){
 
     );
 }
-export default ChennaiHospital;
+export default ChennaiRestaurants;

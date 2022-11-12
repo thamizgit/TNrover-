@@ -26,20 +26,20 @@ function MaduraiMap()
                 <Row>
                     <Col className="rest1" md={4}><a href="/madurai/hospitals"><img src={require('./hos.png')} width={310} height={310}></img></a><h2 className="displaymap" >Hospitals</h2></Col>
                     <Col className="rest1" md={4}><a href="/madurai/restaurants"><img src={require('./res.png')} width={310} height={310}></img></a><h2 className="displaymap2">Restaurants</h2></Col>
-                    <Col className="rest1" md={4}><a href=""><img src={require('./school.png')} width={310} height={310}></img></a><h2 className="displaymap">Schools</h2></Col>
+                    <Col className="rest1" md={4}><a href="/madurai/schools"><img src={require('./school.png')} width={310} height={310}></img></a><h2 className="displaymap">Schools</h2></Col>
                 </Row>
                 <br></br>
                 <Row>
-                <Col className="rest1" md={4}><a href=""><img src={require('./colleges.png')} width={310} height={310}></img></a><h2 className="displaymap">Colleges</h2></Col>
-                    <Col className="rest1" md={4}><a href=""><img src={require('./tourist.png')} width={310} height={310}></img></a><h2 className="displaymap3">Tourist Places</h2></Col>
-                    <Col className="rest1" md={4}><a href=""><img src={require('./room.png')} width={320} height={320}></img></a><h2 className="displaymap6">Hotels</h2></Col>
+                <Col className="rest1" md={4}><a href="/madurai/colleges"><img src={require('./colleges.png')} width={310} height={310}></img></a><h2 className="displaymap">Colleges</h2></Col>
+                    <Col className="rest1" md={4}><a href="/madurai/tourist"><img src={require('./tourist.png')} width={310} height={310}></img></a><h2 className="displaymap3">Tourist Places</h2></Col>
+                    <Col className="rest1" md={4}><a href="/madurai/hotels"><img src={require('./room.png')} width={320} height={320}></img></a><h2 className="displaymap6">Hotels</h2></Col>
                     
                 </Row>
                 <br></br>
                 <Row>
-                <Col className="rest1" md={4}><a href=""><img src={require('./shopping.jpg')} width={320} height={320}></img></a><h2 className="displaymap5">Shopping</h2></Col>
-                    <Col className="rest1" md={4}><a href=""><img src={require('./functionhall.png')} width={320} height={320}></img></a><h2 className="displaymap3">Function Halls</h2></Col>
-                    <Col className="rest1" md={4}><a href=""><img src={require('./cinema.png')} width={310} height={310}></img></a><h2 className="displaymap5">Theatres</h2></Col>
+                <Col className="rest1" md={4}><a href="/madurai/shops"><img src={require('./shopping.jpg')} width={320} height={320}></img></a><h2 className="displaymap5">Shopping</h2></Col>
+                    <Col className="rest1" md={4}><a href="/madurai/functionhalls"><img src={require('./functionhall.png')} width={320} height={320}></img></a><h2 className="displaymap3">Function Halls</h2></Col>
+                    <Col className="rest1" md={4}><a href="/madurai/theatres"><img src={require('./cinema.png')} width={310} height={310}></img></a><h2 className="displaymap5">Theatres</h2></Col>
                     
                 </Row>
                 <br></br>

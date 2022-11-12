@@ -110,27 +110,27 @@ function MaduraiRestaurants(){
     </Col>  
     <Col md={3} className="zoom"> 
                 <Card style={{ width: '350px' }}>
-      <Card.Img variant="top" src={require('./copper.jpg')  } />
+      <Card.Img variant="top" src={require('./maduraisabarees.jpg')  } />
       <Card.Body>
-        <Card.Title><b><h2 class="display-2">COPPER CHIMNEY</h2></b></Card.Title>
+        <Card.Title><b><h2 class="display-2">Sree Sabarees</h2></b></Card.Title>
         <Card.Text><p className="open">
-          Address  :<span className="time"> 73, Cathedral Rd, Kanakasri Nagar, Gopalapuram, Chennai, Tamil Nadu 600086</span></p>
+          Address  :<span className="time">1, Kamarajar Salai, Pankajam Colony, Madurai, Tamil Nadu 625009</span></p>
         </Card.Text>
         <Card.Text>
-            <p className="open">Type: <span className="time">North Indian Restaurant</span></p>
+            <p className="open">Type: <span className="time">Vegetarian</span></p>
         </Card.Text>
         <Card.Text>
-            <p className="open">Open Hours : <span className="time">12–4pm  , 7–11pm</span></p>
+            <p className="open">Open Hours : <span className="time">6am–11:15pm</span></p>
         </Card.Text>
         <Card.Text>
-            <p className="open">Phone : <span className="time">044 2811 5770</span></p>
+            <p className="open">Phone : <span className="time">063690 41492</span></p>
         </Card.Text>
         <Card.Text>
             <p className="open">Rating : <Icon.StarFill></Icon.StarFill><Icon.StarFill></Icon.StarFill><Icon.StarFill></Icon.StarFill><Icon.StarFill></Icon.StarFill><Icon.Star></Icon.Star></p>
         </Card.Text>
-        <Button href="https://goo.gl/maps/eEoPbURoe3tXeeQ76" className="locate" variant="primary">Locate</Button>
+        <Button href="https://goo.gl/maps/XNhngvRASkWss1hPA" className="locate" variant="primary">Locate</Button>
 
-        <Button className="menu"  href="https://delivery.copperchimney.in/copper-chimney-all-outlets" variant="primary">Menu</Button>
+        <Button className="menu"  href="https://www.zomato.com/madurai/hotel-sree-sabarees-kamarajar-salai" variant="primary">Menu</Button>
         
         
         
@@ -145,27 +145,27 @@ function MaduraiRestaurants(){
                 <Row justify="around" >
                  <Col md={3} className="zoom"> 
                 <Card className="card" style={{ width: '350px' }}>
-      <Card.Img variant="top" src={require('./barbeque.jfif')  } />
+      <Card.Img variant="top" src={require('./maduraizaitoon.jpg')  } />
       <Card.Body>
-        <Card.Title><b><h2 class="display-1">Barbeque Nation</h2></b></Card.Title>
+        <Card.Title><b><h2 class="display-1">Zaitoon</h2></b></Card.Title>
         <Card.Text><p className="open">
-          Address  :<span className="time">No 39,Star City Serviced Apartment, Bazullah Rd, near The Grand Sweets,T. Nagar</span></p>
+          Address  :<span className="time">80 Feet Rd, New LIG Colony, Anna Nagar, Sathamangalam, Madurai 625020</span></p>
         </Card.Text>
         <Card.Text>
-            <p className="open">Type: <span className="time">Restaurant</span></p>
+            <p className="open">Type: <span className="time">Middle Eastern Restaurant</span></p>
         </Card.Text>
         <Card.Text>
-            <p className="open">Open Hours : <span className="time">12–5pm, 7–10pm</span></p>
+            <p className="open">Open Hours : <span className="time">11:30am–11:30pm</span></p>
         </Card.Text>
         <Card.Text>
-            <p className="open">Phone : <span className="time">080 6902 8724</span></p>
+            <p className="open">Phone : <span className="time">045 2435 3800</span></p>
         </Card.Text>
         <Card.Text>
             <p className="open">Rating : <Icon.StarFill></Icon.StarFill><Icon.StarFill></Icon.StarFill><Icon.StarFill></Icon.StarFill><Icon.StarFill></Icon.StarFill><Icon.Star></Icon.Star></p>
         </Card.Text>
-        <Button href="https://g.page/BNTNagar?share" className="locate" variant="primary">Locate</Button>
+        <Button href="https://goo.gl/maps/HvDXBMFRdNaK25aR7" className="locate" variant="primary">Locate</Button>
 
-        <Button className="menu"  href="https://www.barbequenation.com/restaurants/chennai/t-nagar?utm_source=GMB&utm_medium=chennai%2Ft-nagar&utm_campaign=GMB_chennai%2Ft-nagar" variant="primary">Menu</Button>
+        <Button className="menu"  href="https://www.zaitoon.online/" variant="primary">Menu</Button>
         
         
       </Card.Body>
@@ -173,27 +173,27 @@ function MaduraiRestaurants(){
     </Col>  
     <Col md={3} className="zoom"> 
                 <Card style={{ width: '350px' }}>
-      <Card.Img variant="top" src={require('./marina.avif')  } />
+      <Card.Img variant="top" src={require('./maduraiarumugam.jpg')  } />
       <Card.Body>
-        <Card.Title><b><h2 class="display-1">The Marina</h2></b></Card.Title>
+        <Card.Title><b><h2 class="display-1">Arumugam Mess</h2></b></Card.Title>
         <Card.Text><p className="open">
-          Address  :<span className="time"> 39, College Ln, Thousand Lights West, Nungambakkam, Chennai, Tamil Nadu 600006</span></p>
+          Address  :<span className="time"> 72 69, State Highway 130 43 Alagar Kovil Main, Chinna Chokikulam, Tamil Nadu 625002</span></p>
         </Card.Text>
         <Card.Text>
-            <p className="open">Type: <span className="time">Sea Food</span></p>
+            <p className="open">Type: <span className="time">South Indian</span></p>
         </Card.Text>
         <Card.Text>
-            <p className="open">Open Hours : <span className="time">12–3pm, 7–11pm</span></p>
+            <p className="open">Open Hours : <span className="time">12–11:30pm</span></p>
         </Card.Text>
         <Card.Text>
-            <p className="open">Phone : <span className="time">044 4203 5265</span></p>
+            <p className="open">Phone : <span className="time">098421 02777</span></p>
         </Card.Text>
         <Card.Text>
             <p className="open">Rating : <Icon.StarFill></Icon.StarFill><Icon.StarFill></Icon.StarFill><Icon.StarFill></Icon.StarFill><Icon.StarFill></Icon.StarFill><Icon.StarHalf></Icon.StarHalf></p>
         </Card.Text>
-        <Button href="https://goo.gl/maps/D1L4Ps5uBPKECCHV9" className="locate" variant="primary">Locate</Button>
+        <Button href="https://goo.gl/maps/Zi3iGtTbdUFjT8NB7" className="locate" variant="primary">Locate</Button>
 
-        <Button className="menu"  href="https://marina.advantagefoods.in/" variant="primary">Menu</Button>
+        <Button className="menu"  href="https://www.zomato.com/madurai/arumugam-mess-kk-nagar/menu" variant="primary">Menu</Button>
         
         
         
@@ -202,27 +202,28 @@ function MaduraiRestaurants(){
     </Col>  
     <Col md={3} className="zoom"> 
                 <Card style={{ width: '350px' }}>
-      <Card.Img className="img" variant="top" src={require('./benjarong.avif')  } />
+      <Card.Img className="img" variant="top" src={require('./maduraiandhra.jpg')  } />
       <Card.Body>
-        <Card.Title><b><h2 class="display-1">Benjarong-Thai</h2></b></Card.Title>
+        <Card.Title><b><h2 class="display-1">Andhra Curry</h2></b></Card.Title>
         <Card.Text><p className="open">
-          Address  :<span className="time">146, TT Krishnamachari Rd, Cooperative Colony, Sri Ram Nagar, Alwarpet, Chennai</span></p>
+          Address  :<span className="time">Panagal Rd, Alwarpuram, Madurai, Tamil Nadu 625020</span></p>
         </Card.Text>
         <Card.Text>
-            <p className="open">Type: <span className="time">Thai Restaurant</span></p>
+            <p className="open">Type: <span className="time">Andhra Style Restaurant</span></p>
         </Card.Text>
         <Card.Text>
-            <p className="open">Open Hours : <span className="time">12–3pm , 7–10:30pm</span></p>
+            <p className="open">Open Hours : <span className="time">11:30am–4pm
+6:30–10:30pm</span></p>
         </Card.Text>
         <Card.Text>
-            <p className="open">Phone : <span className="time">63749 99514</span></p>
+            <p className="open">Phone : <span className="time">045 2439 0111</span></p>
         </Card.Text>
         <Card.Text>
             <p className="open">Rating : <Icon.StarFill></Icon.StarFill><Icon.StarFill></Icon.StarFill><Icon.StarFill></Icon.StarFill><Icon.StarFill></Icon.StarFill><Icon.StarHalf></Icon.StarHalf></p>
         </Card.Text>
-        <Button  href="https://g.page/benjarong_in?share" className="locate" variant="primary">Locate</Button>
+        <Button  href="https://goo.gl/maps/rf5HKb4PLXteV8iK9" className="locate" variant="primary">Locate</Button>
         
-        <Button className="menu"  href="https://www.dineout.co.in/chennai/benjarong-alwarpet-central-chennai-1657/menu" variant="primary">Menu</Button>
+        <Button className="menu"  href="https://www.zomato.com/madurai/andhra-curry-sathamangalam" variant="primary">Menu</Button>
         
       </Card.Body>
     </Card>
@@ -231,7 +232,7 @@ function MaduraiRestaurants(){
                 <Card style={{ width: '350px' }}>
       <Card.Img variant="top" src={require('./avartana.jpg')  } />
       <Card.Body>
-        <Card.Title><b><h2 class="display-1">Avartana</h2></b></Card.Title>
+        <Card.Title><b><h2 class="display-2">Gramiyam Restaurant</h2></b></Card.Title>
         <Card.Text><p className="open">
           Address  :<span className="time">ITC Grand Chola Hotel, Little Mount, Guindy, Chennai, Tamil Nadu 600032</span></p>
         </Card.Text>

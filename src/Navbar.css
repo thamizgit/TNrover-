@@ -18,16 +18,21 @@
    .tag a{
     color:green;
    }
-   .Nav.Link a:hover{
-    background-color: lightgreen;
-   }
+  
    .Nav.link a{
     transition: 500ms;
    }
+   
+   .main{
+    color:"darkgreen";padding:"20px";font-size:"20px";
+
+   }
+   
    .me-auto a:hover{
     background-color: lightgreen;
     border-radius: 20px;
     transition: 0.1s ease;
+    
    }
    .me-auto a{
     transition: 500ms;
@@ -43,6 +48,7 @@
  
  
    }
+   
    .social{
     float:right;
     padding-left: 550px;

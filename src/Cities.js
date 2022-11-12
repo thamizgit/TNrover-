@@ -23,7 +23,7 @@ function Cities(){
     <br></br>
     <Col md={4}><a href='/madurai'><img src={require('./madurai.jpg')} alt='logo' width={450} height={300}/></a></Col>
     <br></br>
-    <Col md={4} ><a href='#'><img src={require('./coimbatore.jpg')} alt='logo' width={450} height={300}/></a></Col>
+    <Col md={4} ><a href='/kovai'><img src={require('./coimbatore.jpg')} alt='logo' width={450} height={300}/></a></Col>
     
     
     </Row> 

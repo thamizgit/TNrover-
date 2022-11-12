@@ -14,7 +14,7 @@ import { hover } from '@testing-library/user-event/dist/hover';
 import UserDetails from './userDetails';
 import { useState } from 'react';
 function App() {  
-  const style1={color:"darkgreen",padding:"20px",fontSize:"20px"};
+  const style1={color:"darkgreen",padding:"20px",fontSize:"20px",};
   const style2={color:"darkgreen",fontSize:"20px",padding:"12px",};
   const [name,setName]=useState("");
   const style3={paddingRight:"0px"};
@@ -33,13 +33,13 @@ function App() {
           <Nav.Link style={style1} href="/about">About</Nav.Link>  
           <NavDropdown  bg="light" style={style2} title="Top Cities" id="basic-nav-dropdown">  
             <NavDropdown.Item className="block" style={{fontSize:20}}  href="/chennai">Chennai</NavDropdown.Item>  
-            <NavDropdown.Item className="block" style={{fontSize:20}} href="#action/3.2">Madurai</NavDropdown.Item>  
+            <NavDropdown.Item className="block" style={{fontSize:20}} href="/madurai">Madurai</NavDropdown.Item>  
             <NavDropdown.Item className="block" style={{fontSize:20}} href="#action/3.3">Erode</NavDropdown.Item> 
              
              
-            <NavDropdown.Item className="block" style={{fontSize:20}} href="#action/3.4">Salem</NavDropdown.Item>  
+            <NavDropdown.Item className="block" style={{fontSize:20}} href="/salem">Salem</NavDropdown.Item>  
           </NavDropdown>
-          <Nav.Link style={style1} href="/"><Icon.Person></Icon.Person></Nav.Link>  
+          <Nav.Link style={style1} href="/signup"><Icon.Person></Icon.Person></Nav.Link>  
           <Nav.Link style={style1} href="/"><Icon.DoorOpen></Icon.DoorOpen></Nav.Link>  
         </Nav>  
        

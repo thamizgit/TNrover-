@@ -46,7 +46,7 @@ function ChennaiSchools(){
         </Card.Text>
         <Button href="https://goo.gl/maps/E929AZSGsHVp1yKX9" className="locate" variant="primary">Locate</Button>
 
-        <Button className="menu"  href="https://www.dineout.co.in/chennai/royal-vega-guindy-south-chennai-12305/menu#&gid=2&pid=1" variant="primary">Menu</Button>
+        <Button className="menu"  href="https://chettinadvidyashram.org/" variant="primary">Visit</Button>
         
         
       </Card.Body>
@@ -58,7 +58,7 @@ function ChennaiSchools(){
       <Card.Body>
         <Card.Title><b><h2 class="display-2">LOYALA MATRIC</h2></b></Card.Title>
         <Card.Text><p className="open">
-          Address  :<span className="time-1"> 362G+9F2, 4th Cross St, United India Colony, Kodambakkam, Chennai, Tamil Nadu 600024</span></p>
+          Address  :<span className="time"> 362G+9F2, 4th Cross St, United India Colony, Kodambakkam, Chennai 600024</span></p>
         </Card.Text>
         <Card.Text>
             <p className="open">Type: <span className="time">higher secondary</span></p>
@@ -114,7 +114,7 @@ function ChennaiSchools(){
       <Card.Body>
         <Card.Title><b><h2 class="display-2">St.Britto’s Academy</h2></b></Card.Title>
         <Card.Text><p className="open">
-          Address  :<span className="time-1">R3/3, Nethaji Rd, Opposite Cart Track Road, Railar Nagar, TNHB Colony, Velachery, Chennai</span></p>
+          Address  :<span className="time">R3/3, Nethaji Rd,  Railar Nagar, TNHB Colony, Velachery, Chennai 600042</span></p>
         </Card.Text>
         <Card.Text>
             <p className="open">Type: <span className="time">CBSE</span></p>
@@ -130,7 +130,7 @@ function ChennaiSchools(){
         </Card.Text>
         <Button href="https://goo.gl/maps/eEoPbURoe3tXeeQ76" className="locate" variant="primary">Locate</Button>
 
-        <Button className="menu"  href="https://delivery.copperchimney.in/copper-chimney-all-outlets" variant="primary">Menu</Button>
+        <Button className="menu"  href="https://stbrittosacademy.edu.in/" variant="primary">Visit</Button>
         
         
         
@@ -233,7 +233,7 @@ function ChennaiSchools(){
       <Card.Body>
         <Card.Title><b><h2 class="display-1">Asan Memorial</h2></b></Card.Title>
         <Card.Text><p className="open">
-          Address  :<span className="time">1, Anderson Rd, Thousand Lights West, Gandhi Nagar, Chennai, Tamil Nadu 600006</span></p>
+          Address  :<span className="time">1, Anderson Rd, Thousand Lights West, Gandhi Nagar, Chennai 600006</span></p>
         </Card.Text>
         <Card.Text>
             <p className="open">Type: <span className="time">CBSE</span></p>

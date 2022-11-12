@@ -34,10 +34,24 @@ import Salemcolleges from './Salemcolleges';
 import Salemtourist from './Salemtourist';
 import Salemtheatre from './Salemtheatre';
 import Salemfunctionhall from './Salemfunctionhall';
+import SalemHotels from './salemhotels';
+import SalemMalls from './Salemmalls';
 
 import Madurai from './Madurai';
 import MaduraiHospitals from './MaduraiHospitals';
 import MaduraiRestaurants from './MaduraiRestaurants';
+import MaduraiSchools from './MaduraiSchools';
+import MaduraiColleges from './MaduraiColleges';
+import MaduraiTourist from './MaduraiTourist';
+import MaduraiHotels from './MaduraiHotels';
+import MaduraiMalls from './MaduraiMalls';
+import MaduraiFunctionhalls from './MaduraiFunctionhalls';
+import MaduraiTheatres from './Maduraitheatres';
+
+import Kovai from './Kovai';
+import KovaiHospitals from './KovaiHospitals';
+import KovaiRestaurants from './KovaiRestaurants';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -70,10 +84,25 @@ root.render(
         <Route exact path='/salem/tourist'   element={<Salemtourist/>}/>
         <Route exact path='/salem/theatre'   element={<Salemtheatre/>}/>
         <Route exact path='/salem/functionhall'   element={<Salemfunctionhall/>}/>
+        <Route exact path='/salem/hotels'   element={<SalemHotels/>}/>
+        <Route exact path='/salem/shops'   element={<SalemMalls/>}/>
 
         <Route exact path='/madurai'   element={<Madurai/>}/>
         <Route exact path='/madurai/hospitals'   element={<MaduraiHospitals/>}/>
         <Route exact path='/madurai/restaurants'   element={<MaduraiRestaurants/>}/>
+        <Route exact path='/madurai/schools' element={<MaduraiSchools />}/>
+        <Route exact path='/madurai/colleges' element={<MaduraiColleges />}/>
+        <Route exact path='/madurai/tourist' element={<MaduraiTourist />}/>
+        <Route exact path='/madurai/hotels' element={<MaduraiHotels />}/> 
+        <Route exact path='/madurai/shops' element={<MaduraiMalls />}/>
+        <Route exact path='/madurai/functionhalls' element={<MaduraiFunctionhalls />}/>
+        <Route exact path='/madurai/theatres' element={<MaduraiTheatres />}/>
+
+        <Route exact path='/kovai' element={<Kovai />}/>
+        <Route exact path='/kovai/hospitals' element={<KovaiHospitals />}/>
+        <Route exact path='/kovai/restaurants' element={<KovaiRestaurants />}/>
+
+
 
       </Routes>
     </Router>

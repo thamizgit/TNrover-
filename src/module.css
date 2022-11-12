@@ -263,3 +263,6 @@ Button {
         font-style: inherit;
         color: inherit;
     }
+::selection{
+    color:#36b34e;
+}

@@ -56,7 +56,7 @@ function Salemfunctionhall(){
                 <Card style={{ width: '350px' }}>
       <Card.Img variant="top" src={require('./lrn-salem.jpg')  } />
       <Card.Body>
-        <Card.Title><b><h2 class="display-1"></h2>LRN Marriage Hall</b></Card.Title>
+        <Card.Title><b><h2 class="display-1">LRN Hall</h2></b></Card.Title>
         <Card.Text><p className="open">
           Address  :<span className="time">No. 51, Sarada College Rd, LRN Colony, Hasthampatti, Salem, Tamil Nadu 636007</span></p>
         </Card.Text>
@@ -85,7 +85,7 @@ function Salemfunctionhall(){
                 <Card style={{ width: '350px' }}>
       <Card.Img className="img" variant="top" src={require('./jks-salem.jpg')  } />
       <Card.Body>
-        <Card.Title><b><h2 class="display-1">GK convention hall</h2></b></Card.Title>
+        <Card.Title><b><h2 class="display-1">GK convention</h2></b></Card.Title>
         <Card.Text><p className="open">
           Address  :<span className="time">Behind Police Station,Alagapuram,Periya Pudur,Tamil Nadu 636016</span></p>
         </Card.Text>
@@ -115,7 +115,7 @@ function Salemfunctionhall(){
       <Card.Body>
         <Card.Title><b><h2 class="display-2">Anandham Hall</h2></b></Card.Title>
         <Card.Text><p className="open">
-          Address  :<span className="time">Sumanagalee Mahal, 14/1A, Omalur Main Rd, near Pothys Showroom,Arisipalayam, Salem, Tamil Nadu 636009</span></p>
+          Address  :<span className="time">Sumanagalee Mahal, 14/1A, Omalur Main Rd,Arisipalayam, Salem 636009</span></p>
         </Card.Text>
         <Card.Text>
             <p className="open">Amenities:<span className="time">valet parking,Guest accommodation</span></p>
@@ -176,7 +176,7 @@ function Salemfunctionhall(){
                 <Card style={{ width: '350px' }}>
       <Card.Img variant="top" src={require('./kokila-salem.jpg')  } />
       <Card.Body>
-        <Card.Title><b><h2 class="display-1">Kokila Marriage Hall</h2></b></Card.Title>
+        <Card.Title><b><h2 class="display-1">Kokila Hall</h2></b></Card.Title>
         <Card.Text><p className="open">
           Address  :<span className="time">J4VX+JFG, Linemedu, Gugai, Salem, Tamil Nadu 636006</span></p>
         </Card.Text>
@@ -205,7 +205,7 @@ function Salemfunctionhall(){
                 <Card style={{ width: '350px' }}>
       <Card.Img className="img" variant="top" src={require('./shanthi-salem.jpg')  } />
       <Card.Body>
-        <Card.Title><b><h2 class="display-1">Shanthi Radhakrishnan </h2></b></Card.Title>
+        <Card.Title><b><h2 class="display-1">Radhakrishnan</h2></b></Card.Title>
         <Card.Text><p className="open">
           Address  :<span className="time">Muthunaickenpatti Main Rd,Old Suramangalam,Tamil Nadu 636302</span></p>
         </Card.Text>
@@ -232,9 +232,9 @@ function Salemfunctionhall(){
                 <Card style={{ width: '350px' }}>
       <Card.Img variant="top" src={require('./kmb-salem.png')  } />
       <Card.Body>
-        <Card.Title><b><h2 class="display-1">KMB Convention Centre</h2></b></Card.Title>
+        <Card.Title><b><h2 class="display-1">KMB Centre</h2></b></Card.Title>
         <Card.Text><p className="open">
-          Address  :<span className="time">KMB Complex, K.M.B. Complex, Omalur Main Rd, Swarnapuri, Salem, Tamil Nadu 636005</span></p>
+          Address  :<span className="time">KMB Complex, K.M.B. Complex, Omalur Main Rd, Swarnapuri, Salem 636005</span></p>
         </Card.Text>
         <Card.Text>
             <p className="open">Amenities:<span className="time">Wedding Planner on site,Dance lighting,turf</span></p>
