@@ -81,10 +81,11 @@ html,
 }
 
 .outline{
-  padding-top:250px;
-  padding-left: 550px;
-  padding-right: 550px;
-  padding-bottom: 500px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .inner{
   border:2px solid black;
@@ -92,6 +93,12 @@ html,
   background-color: white;
   border-radius: 10px;
   transition: 500ms;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  
 }
 .inner:hover{
   transform: scale(1.1);
