@@ -21,8 +21,8 @@ function KovaiSchools() {
 
         <br></br>
         <Row justify="around">
-          <Col md={3} className="zoom">
-            <Card className="card" style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card className="card" style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img
                 variant="top"
                 src={require("../images/kovaividya.jpg")}
@@ -79,13 +79,13 @@ function KovaiSchools() {
                   href="https://www.kovaividyamandhir.com/"
                   variant="primary"
                 >
-                  Menu
+                  Visit
                 </Button>
               </Card.Body>
             </Card>
           </Col>
-          <Col md={3} className="zoom">
-            <Card style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img variant="top" src={require("../images/kovaicmc.jpg")} />
               <Card.Body>
                 <Card.Title>
@@ -145,8 +145,8 @@ function KovaiSchools() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={3} className="zoom">
-            <Card style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img
                 className="img"
                 variant="top"
@@ -209,8 +209,8 @@ function KovaiSchools() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={3} className="zoom">
-            <Card style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img
                 variant="top"
                 src={require("../images/kovaireeds.jpg")}
@@ -267,17 +267,14 @@ function KovaiSchools() {
                   href="https://www.reedsws.com/"
                   variant="primary"
                 >
-                  Menu
+                  Visit
                 </Button>
               </Card.Body>
             </Card>
           </Col>
-        </Row>
-        <br></br>
-        <br></br>
-        <Row justify="around">
-          <Col md={3} className="zoom">
-            <Card className="card" style={{ width: "350px" }}>
+        
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card className="card" style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img variant="top" src={require("../images/kovaibvm.jpg")} />
               <Card.Body>
                 <Card.Title>
@@ -336,8 +333,8 @@ function KovaiSchools() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={3} className="zoom">
-            <Card style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img
                 variant="top"
                 src={require("../images/kovaikendra.jpg")}
@@ -399,8 +396,8 @@ function KovaiSchools() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={3} className="zoom">
-            <Card style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img
                 className="img"
                 variant="top"
@@ -463,8 +460,8 @@ function KovaiSchools() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={3} className="zoom">
-            <Card style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img
                 variant="top"
                 src={require("../images/kovaiperks.jpeg")}
@@ -527,13 +524,14 @@ function KovaiSchools() {
             </Card>
           </Col>
         </Row>
-      </Container>
-      <br></br>
+        <br></br>
       <Row className="fol" justify="around">
         <Col md={12} className="head">
           <h2>Follow Us For More Information</h2>
         </Col>
       </Row>
+      </Container>
+      
       <Footer />
     </div>
   );

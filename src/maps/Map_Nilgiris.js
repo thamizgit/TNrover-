@@ -2,8 +2,6 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col } from "react-bootstrap";
 import "../module.css";
-import * as Icon from "react-bootstrap-icons";
-import { toBeRequired } from "@testing-library/jest-dom/dist/matchers";
 import Footer from "../footer/Footer";
 import Category from "../category/Category";
 function Map_Nilgiris() {
@@ -12,7 +10,7 @@ function Map_Nilgiris() {
       <Container fluid>
         <Row>
           <Col md={6}>
-            <img
+            <img alt='nilgiris_map'
               className="img"
               height="650px"
               width="250px"
@@ -49,15 +47,16 @@ function Map_Nilgiris() {
           <h1>Go By Category</h1>
         </div>
         <br></br>
-        <Category />
+        <Category city={"nilgiris"}/>
         <br></br>
-      </Container>
-      <br></br>
+        <br></br>
       <Row className="fol" justify="around">
         <Col md={12} className="head">
           <h2>Follow Us For More Information</h2>
         </Col>
       </Row>
+      </Container>
+      
       <Footer />
     </div>
   );

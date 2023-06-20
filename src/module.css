@@ -285,4 +285,6 @@ footer {
    justify-content: center;
    align-items: center;
    align-content: center;
+   row-gap: 2rem;
+   
 }

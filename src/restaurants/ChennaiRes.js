@@ -6,8 +6,6 @@ import "../module.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-
-import { toBeRequired } from "@testing-library/jest-dom/dist/matchers";
 import Footer from "../footer/Footer.js";
 
 function ChennaiRestaurants() {
@@ -23,8 +21,8 @@ function ChennaiRestaurants() {
 
         <br></br>
         <Row justify="around">
-          <Col md={3} className="zoom">
-            <Card className="card" style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card className="card" style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img
                 variant="top"
                 src={require("../images/royalvega.jpg")}
@@ -86,8 +84,8 @@ function ChennaiRestaurants() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={3} className="zoom">
-            <Card style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img variant="top" src={require("../images/annalak.jpg")} />
               <Card.Body>
                 <Card.Title>
@@ -147,8 +145,8 @@ function ChennaiRestaurants() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={3} className="zoom">
-            <Card style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img
                 className="img"
                 variant="top"
@@ -212,8 +210,8 @@ function ChennaiRestaurants() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={3} className="zoom">
-            <Card style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img variant="top" src={require("../images/copper.jpg")} />
               <Card.Body>
                 <Card.Title>
@@ -273,12 +271,9 @@ function ChennaiRestaurants() {
               </Card.Body>
             </Card>
           </Col>
-        </Row>
-        <br></br>
-        <br></br>
-        <Row justify="around">
-          <Col md={3} className="zoom">
-            <Card className="card" style={{ width: "350px" }}>
+        
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card className="card" style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img
                 variant="top"
                 src={require("../images/barbeque.jfif")}
@@ -340,8 +335,8 @@ function ChennaiRestaurants() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={3} className="zoom">
-            <Card style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img variant="top" src={require("../images/marina.avif")} />
               <Card.Body>
                 <Card.Title>
@@ -401,8 +396,8 @@ function ChennaiRestaurants() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={3} className="zoom">
-            <Card style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img
                 className="img"
                 variant="top"
@@ -466,8 +461,8 @@ function ChennaiRestaurants() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={3} className="zoom">
-            <Card style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img variant="top" src={require("../images/avartana.jpg")} />
               <Card.Body>
                 <Card.Title>
@@ -527,13 +522,14 @@ function ChennaiRestaurants() {
             </Card>
           </Col>
         </Row>
-      </Container>
-      <br></br>
+        <br></br>
       <Row className="fol" justify="around">
         <Col md={12} className="head">
           <h2>Follow Us For More Information</h2>
         </Col>
       </Row>
+      </Container>
+    
       <Footer />
     </div>
   );

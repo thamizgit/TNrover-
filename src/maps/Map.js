@@ -3,8 +3,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col } from "react-bootstrap";
 import "../module.css";
 import "../hospitals/Chennaihospital.js";
-import * as Icon from "react-bootstrap-icons";
-import { toBeRequired } from "@testing-library/jest-dom/dist/matchers";
 import Footer from "../footer/Footer";
 import Category from "../category/Category";
 function Map() {
@@ -14,6 +12,7 @@ function Map() {
         <Row>
           <Col md={6}>
             <img
+            alt="chennai_map"
               className="img"
               height="auto"
               src={require("../images/chennaimap.jpg")}
@@ -61,15 +60,16 @@ function Map() {
           <h1>Go By Category</h1>
         </div>
         <br></br>
-        <Category />
+        <Category city="chennai"/>
         <br></br>
-      </Container>
-
-      <Row className="fol" justify="around">
+        <Row className="fol" justify="around">
         <Col md={12} className="head">
           <h2>Follow Us For More Information</h2>
         </Col>
       </Row>
+      </Container>
+
+      
       <Footer />
     </div>
   );

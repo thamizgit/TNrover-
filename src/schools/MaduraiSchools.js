@@ -20,9 +20,9 @@ function MaduraiSchools() {
         </Row>
 
         <br></br>
-        <Row justify="around">
-          <Col md={3} className="zoom">
-            <Card className="card" style={{ width: "350px" }}>
+        <Row justify="between">
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card className="card" style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img
                 variant="top"
                 src={require("../images/maduraijeevana.jpg")}
@@ -84,8 +84,8 @@ function MaduraiSchools() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={3} className="zoom">
-            <Card style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img
                 variant="top"
                 src={require("../images/maduraishine.jfif")}
@@ -148,8 +148,8 @@ function MaduraiSchools() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={3} className="zoom">
-            <Card style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img
                 className="img"
                 variant="top"
@@ -212,8 +212,8 @@ function MaduraiSchools() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={3} className="zoom">
-            <Card style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img
                 variant="top"
                 src={require("../images/maduraifatima.jfif")}
@@ -275,12 +275,9 @@ function MaduraiSchools() {
               </Card.Body>
             </Card>
           </Col>
-        </Row>
-        <br></br>
-        <br></br>
-        <Row justify="around">
-          <Col md={3} className="zoom">
-            <Card className="card" style={{ width: "350px" }}>
+        
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card className="card" style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img
                 variant="top"
                 src={require("../images/maduraisairam.jpg")}
@@ -342,8 +339,8 @@ function MaduraiSchools() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={3} className="zoom">
-            <Card style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img
                 variant="top"
                 src={require("../images/madurairoyal.jpg")}
@@ -405,8 +402,8 @@ function MaduraiSchools() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={3} className="zoom">
-            <Card style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img
                 className="img"
                 variant="top"
@@ -469,8 +466,8 @@ function MaduraiSchools() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={3} className="zoom">
-            <Card style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img
                 variant="top"
                 src={require("../images/maduraijoseph.jpg")}
@@ -533,13 +530,14 @@ function MaduraiSchools() {
             </Card>
           </Col>
         </Row>
-      </Container>
-      <br></br>
+        <br></br>
       <Row className="fol" justify="around">
         <Col md={12} className="head">
           <h2>Follow Us For More Information</h2>
         </Col>
       </Row>
+      </Container>
+      
       <Footer />
     </div>
   );

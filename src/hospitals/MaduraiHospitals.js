@@ -7,7 +7,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 
-import { toBeRequired } from "@testing-library/jest-dom/dist/matchers";
 import Footer from "../footer/Footer.js";
 
 function MaduraiHospitals() {
@@ -23,8 +22,8 @@ function MaduraiHospitals() {
 
         <br></br>
         <Row justify="around">
-          <Col md={3} className="zoom">
-            <Card className="card" style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card className="card" style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img
                 variant="top"
                 src={require("../images/maduraispeciality.jpg")}
@@ -73,8 +72,8 @@ function MaduraiHospitals() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={3} className="zoom">
-            <Card style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img
                 variant="top"
                 src={require("../images/maduraintc.jpg")}
@@ -123,8 +122,8 @@ function MaduraiHospitals() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={3} className="zoom">
-            <Card style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img
                 className="img"
                 variant="top"
@@ -175,8 +174,8 @@ function MaduraiHospitals() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={3} className="zoom">
-            <Card style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img
                 variant="top"
                 src={require("../images/maduraipreethi.jpg")}
@@ -225,12 +224,9 @@ function MaduraiHospitals() {
               </Card.Body>
             </Card>
           </Col>
-        </Row>
-        <br></br>
-        <br></br>
-        <Row justify="around">
-          <Col md={3} className="zoom">
-            <Card className="card" style={{ width: "350px" }}>
+        
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card className="card" style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img
                 variant="top"
                 src={require("../images/maduraigv.jfif")}
@@ -279,8 +275,8 @@ function MaduraiHospitals() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={3} className="zoom">
-            <Card style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img
                 variant="top"
                 src={require("../images/maduraiquality.jpg")}
@@ -328,8 +324,8 @@ function MaduraiHospitals() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={3} className="zoom">
-            <Card style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img
                 className="img"
                 variant="top"
@@ -378,8 +374,8 @@ function MaduraiHospitals() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={3} className="zoom">
-            <Card style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img
                 variant="top"
                 src={require("../images/maduraiar.jpg")}
@@ -430,13 +426,13 @@ function MaduraiHospitals() {
         </Row>
         <br></br>
         <br></br>
-      </Container>
-      <br></br>
       <Row className="fol" justify="around">
         <Col md={12} className="head">
           <h2>Follow Us For More Information</h2>
         </Col>
       </Row>
+      </Container>
+      
       <Footer />
     </div>
   );

@@ -6,6 +6,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Navbar from "../navbar/Navbar";
+import Footer from "../footer/Footer";
 
 function ChennaiTheatres() {
   return (
@@ -21,8 +22,8 @@ function ChennaiTheatres() {
 
         <br></br>
         <Row justify="around">
-          <Col md={3} className="zoom">
-            <Card className="card" style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card className="card" style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img variant="top" src={require("../images/jazz.jpg")} />
               <Card.Body>
                 <Card.Title>
@@ -72,8 +73,8 @@ function ChennaiTheatres() {
             </Card>
           </Col>
 
-          <Col md={3} className="zoom">
-            <Card className="card" style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card className="card" style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img variant="top" src={require("../images/pvr.jpg")} />
               <Card.Body>
                 <Card.Title>
@@ -123,8 +124,8 @@ function ChennaiTheatres() {
             </Card>
           </Col>
 
-          <Col md={3} className="zoom">
-            <Card className="card" style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card className="card" style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img
                 variant="top"
                 src={require("../images/pvrplazzo.jpg")}
@@ -177,8 +178,8 @@ function ChennaiTheatres() {
             </Card>
           </Col>
 
-          <Col md={3} className="zoom">
-            <Card className="card" style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card className="card" style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img variant="top" src={require("../images/ags.jpg")} />
               <Card.Body>
                 <Card.Title>
@@ -227,13 +228,9 @@ function ChennaiTheatres() {
               </Card.Body>
             </Card>
           </Col>
-        </Row>
-        <br></br>
-        <br></br>
-
-        <Row justify="around">
-          <Col md={3} className="zoom">
-            <Card className="card" style={{ width: "350px" }}>
+       
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card className="card" style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img variant="top" src={require("../images/sathyam.jpg")} />
               <Card.Body>
                 <Card.Title>
@@ -283,8 +280,8 @@ function ChennaiTheatres() {
             </Card>
           </Col>
 
-          <Col md={3} className="zoom">
-            <Card className="card" style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card className="card" style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img variant="top" src={require("../images/mayajaal.jpg")} />
               <Card.Body>
                 <Card.Title>
@@ -333,8 +330,8 @@ function ChennaiTheatres() {
             </Card>
           </Col>
 
-          <Col md={3} className="zoom">
-            <Card className="card" style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card className="card" style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img variant="top" src={require("../images/gk4k.jpg")} />
               <Card.Body>
                 <Card.Title>
@@ -384,8 +381,8 @@ function ChennaiTheatres() {
             </Card>
           </Col>
 
-          <Col md={3} className="zoom">
-            <Card className="card" style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card className="card" style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img variant="top" src={require("../images/sangam.jpg")} />
               <Card.Body>
                 <Card.Title>
@@ -435,35 +432,15 @@ function ChennaiTheatres() {
             </Card>
           </Col>
         </Row>
-      </Container>
-      <br></br>
+        <br></br>
       <Row className="fol" justify="around">
         <Col md={12} className="head">
           <h2>Follow Us For More Information</h2>
         </Col>
       </Row>
-      <footer className="ro">
-        <div>
-          <a
-            className="insta"
-            href="https://instagram.com/_.shutter_eye._?igshid=YmMyMTA2M2Y="
-          >
-            <Icon.Instagram></Icon.Instagram>
-          </a>
-
-          <a className="face" href="">
-            <Icon.Facebook></Icon.Facebook>
-          </a>
-
-          <a className="link" href="">
-            <Icon.Linkedin></Icon.Linkedin>
-          </a>
-
-          <a className="what" href="https://t.me/+lDs3sbk5J6tjMTI9">
-            <Icon.Telegram></Icon.Telegram>
-          </a>
-        </div>
-      </footer>
+      </Container>
+     
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+  }
+  main{
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    padding-top: 2%;
+    padding-bottom: 3%;
+  }
+  .App{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .App-register{
+    width: 35%;
+    min-height: 500px;
+    margin: 6% auto;
+    background-color: darkblue;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+  display: flex;
+  flex-direction: column;}
+  .App-register h1{
+    margin: 10px auto;
+    text-align: center;
+  }
+  .App-register form{
+    background-color: darkblue;
+    padding: 1rem;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    border-radius: 10px;
+  }
+  .App-register form label{
+    align-self: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  .App-register input{
+    width: 60%;
+    height: 35px;
+    justify-self: center;
+    align-self: center;
+    border-radius: 4px;
+    border: none;
+    font-size: 1rem;
+    padding: 0.2rem;
+    color:darkblue;
+    font-weight: bolder;
+  }
+  .App-register input:focus{
+    border: 2px solid yellow;
+    outline:2px solid yellow;
+  }
+  .pwd-note{
+    background-color: black;
+    color:white;
+    font-size: 0.9rem;
+    width: 80%;
+    align-self: center;
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+  .App-register .auth-btn{
+    width: 50%;
+    align-self: center;
+    border: none;
+    height: 40px;
+    margin-top: 1rem;
+    margin: 1rem auto;
+    font-size: 1.2rem;
+    color: darkblue;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bolder;
+  }
+  .App-register .auth-btn:hover{
+    opacity: 0.7;
+  }
+  .already{
+    font-size: 1.2rem;
+    align-self: center;
+  }
+  .sign-in{
+    color:white;
+    font-size: 1.2rem;
+    text-decoration: underline;
+    align-self: center;
+    margin: -18px auto;
+  }
+  .sign-in:hover{
+    color:white;
+    opacity: 0.7;
+  }
+  .sign-up:hover{
+    color: white;
+    opacity: 0.7;
+  }
+  .err-msg{
+    background-color: hsla(0, 60%, 71%, 0.5);
+    color:red;
+    width: 80%;
+    margin: 0px auto;
+    padding:0.5rem;
+    border-radius: 9px;
+    text-align: center;
+  }
+  @media  screen and (max-width: 800px) {
+    main{
+      padding-bottom: 30%;
+      margin: auto 0;
+    }
+    .App-register{
+      width: 90%;
+      
+    }
+    .App-register input{
+      width: 94%;
+    }
+    .pwd-note{
+      width: 94%;
+    }
+    .err-msg{
+      width: 94%;
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+  }

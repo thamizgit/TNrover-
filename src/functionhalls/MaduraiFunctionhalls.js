@@ -21,8 +21,8 @@ function MaduraiFunctionhalls() {
 
         <br></br>
         <Row justify="around">
-          <Col md={3} className="zoom">
-            <Card className="card" style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card className="card" style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img
                 variant="top"
                 src={require("../images/maduraikm.jpg")}
@@ -72,8 +72,8 @@ function MaduraiFunctionhalls() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={3} className="zoom">
-            <Card style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img
                 variant="top"
                 src={require("../images/maduraijayam.jpg")}
@@ -122,8 +122,8 @@ function MaduraiFunctionhalls() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={3} className="zoom">
-            <Card style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img
                 className="img"
                 variant="top"
@@ -173,8 +173,8 @@ function MaduraiFunctionhalls() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={3} className="zoom">
-            <Card style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img
                 variant="top"
                 src={require("../images/maduraiav.jpg")}
@@ -223,13 +223,9 @@ function MaduraiFunctionhalls() {
               </Card.Body>
             </Card>
           </Col>
-        </Row>
-        <br></br>
-
-        <br></br>
-        <Row justify="around">
-          <Col md={3} className="zoom">
-            <Card className="card" style={{ width: "350px" }}>
+        
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card className="card" style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img
                 variant="top"
                 src={require("../images/maduraistar.jpg")}
@@ -278,8 +274,8 @@ function MaduraiFunctionhalls() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={3} className="zoom">
-            <Card style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img
                 variant="top"
                 src={require("../images/maduraicr.jpg")}
@@ -328,8 +324,8 @@ function MaduraiFunctionhalls() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={3} className="zoom">
-            <Card style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img
                 className="img"
                 variant="top"
@@ -379,8 +375,8 @@ function MaduraiFunctionhalls() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={3} className="zoom">
-            <Card style={{ width: "350px" }}>
+          <Col sm={12} md={5} lg={5} xl={4} xxl={3} className="zoom">
+            <Card style={{ width: "350px",margin:"2rem auto" }}>
               <Card.Img
                 variant="top"
                 src={require("../images/madurairaja.jpg")}
@@ -430,13 +426,14 @@ function MaduraiFunctionhalls() {
             </Card>
           </Col>
         </Row>
-      </Container>
-      <br></br>
+        <br></br>
       <Row className="fol" justify="around">
         <Col md={12} className="head">
           <h2>Follow Us For More Information</h2>
         </Col>
       </Row>
+      </Container>
+      
       <Footer />
     </div>
   );

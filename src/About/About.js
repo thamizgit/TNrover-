@@ -14,7 +14,7 @@ function About() {
         <Row>
           <Col>
             <p style={{ padding: "35px" }}>
-              <img
+              <img alt="asset"
                 src={require("../images/aaaboutthumb.png")}
                 width="100%"
                 className="zooml"
@@ -27,7 +27,7 @@ function About() {
         <Row>
           <article className="flex-layout">
             <Col md={4}>
-              <img
+              <img alt="asset"
                 src={require("../images/aatour.png")}
                 width="400px"
                 className="zoomk"
@@ -86,7 +86,7 @@ function About() {
               </div>
             </Col>
             <Col md={4}>
-              <img
+              <img alt="asset"
                 src={require("../images/aahospital.png")}
                 width="250px"
                 className="zoomk"
@@ -99,7 +99,7 @@ function About() {
         <Row>
           <article className="flex-layout">
             <Col md={4}>
-              <img
+              <img alt="asset"
                 src={require("../images/aaedu.png")}
                 width="400px"
                 className="zoomk"
@@ -163,7 +163,7 @@ function About() {
               </div>
             </Col>
             <Col md={4}>
-              <img
+              <img alt="asset"
                 src={require("../images/aaresturant.png")}
                 width="350px"
                 className="zoomk"
@@ -176,7 +176,7 @@ function About() {
         <Row>
           <article className="flex-layout">
             <Col md={4}>
-              <img
+              <img alt="asset"
                 src={require("../images/aatheater.jpg")}
                 width="350px"
                 className="zoomk"
@@ -226,11 +226,11 @@ function About() {
         }}>
 
             <Col>
-              <a
+              <a 
                 href="https://www.linkedin.com/in/thamiz-selvan-a-5675bb217?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADa6dF8BBorBCwim8quOvNhzyCWwOq_axGE&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3Bjbmw%2FGYeQra4TrwmsU6mYw%3D%3D"
                 className="ad"
               >
-                <p>THAMIZ SELVAN A</p>
+                <p style={{padding:"12px",backgroundColor:"lightgreen",borderRadius:"10px",maxWidth:"200px",textAlign:"center"}}>THAMIZ SELVAN</p>
               </a>
             </Col>
             <Col>
@@ -238,7 +238,7 @@ function About() {
                 href="https://www.linkedin.com/in/vaibhav-shanmugasundaram-293163240/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BhmbEHWhFRJCMdNyIHXVZjQ%3D%3D"
                 className="ad"
               >
-                <p>VAIBHAV S</p>
+                <p style={{padding:"12px",backgroundColor:"lightgreen",borderRadius:"10px",maxWidth:"200px",textAlign:"center"}}>VAIBHAV</p>
               </a>
             </Col>
 
@@ -247,7 +247,7 @@ function About() {
                 href="https://www.linkedin.com/in/sharath-senthil?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADcbfWcBdAkO5gSQ0_Um8gtVna2FMmXpA4c&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3B6NsXne%2FhRB6c%2F4DXNvXiew%3D%3D"
                 className="ad"
               >
-                <p>SHARATH S</p>
+                <p style={{padding:"12px",backgroundColor:"lightgreen",borderRadius:"10px",maxWidth:"200px",textAlign:"center"}}>SHARATH</p>
               </a>
             </Col>
             <Col>
@@ -255,7 +255,7 @@ function About() {
                 href="https://www.linkedin.com/in/yogavarshan-s-693589201?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADOFVI8BIYf7LycgOS6HoE9-AKzN20tbsrI&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BmGgWTz2wT9%2BSBft58pQB%2Bw%3D%3D"
                 className="ad"
               >
-                <p>YOGAVARSHAN S</p>
+                <p style={{padding:"12px",backgroundColor:"lightgreen",borderRadius:"10px",maxWidth:"200px",textAlign:"center"}}>YOGAVARSHAN</p>
               </a>
             </Col>
             <Col>
@@ -263,15 +263,7 @@ function About() {
                 href="https://www.linkedin.com/in/srisanjai-nallathambi-91aa7123b?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADvHquYBZXcOL5dUyRYqkSpzPV11b96xjaQ&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BP7K9tY5iTHCt7SeM20ycAA%3D%3D"
                 className="ad"
               >
-                <p>SRI SANJAI N</p>
-              </a>
-            </Col>
-            <Col>
-              <a
-                href="https://www.linkedin.com/in/viswa-veeramuthu-73a239229?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADkqW94BDet3y3XCk8FICyExnXdxs1IHLzU&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BOq%2FC%2Bp%2BdTieg%2FGNlxGQFww%3D%3D"
-                className="ad"
-              >
-                <p>VISWA V</p>
+                <p style={{padding:"12px",backgroundColor:"lightgreen",borderRadius:"10px",maxWidth:"200px",textAlign:"center"}}>SRI SANJAI</p>
               </a>
             </Col>
       

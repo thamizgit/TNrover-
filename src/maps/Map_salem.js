@@ -5,15 +5,15 @@ import "../module.css";
 import "../hospitals/Salemhospital.js";
 import "../restaurants/Salemres.js";
 import "../schools/Salemschool.js";
-import { toBeRequired } from "@testing-library/jest-dom/dist/matchers";
 import Category from "../category/Category";
+import Footer from "../footer/Footer";
 function Map_salem() {
   return (
     <div className="main">
       <Container fluid>
         <Row>
           <Col md={6}>
-            <img
+            <img alt="salem_map"
               className="img"
               height="650px"
               width="250px"
@@ -49,9 +49,16 @@ function Map_salem() {
           <h1>Go By Category</h1>
         </div>
         <br></br>
-        <Category />
+        <Category city={"salem"}/>
         <br></br>
+        <Row className="fol" justify="around">
+        <Col md={12} className="head">
+          <h2>Follow Us For More Information</h2>
+        </Col>
+      </Row>
       </Container>
+      
+      <Footer />
     </div>
   );
 }

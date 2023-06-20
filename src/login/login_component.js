@@ -22,7 +22,7 @@ export default class Login extends Component {
     e.preventDefault();
     const { email, password } = this.state;
     console.log(email, password);
-    fetch("http://localhost:5000/login-user", {
+    fetch("https://tnrover-backend.onrender.com/login-user", {
       method: "POST",
       crossDomain: true,
       headers: {
@@ -39,12 +39,9 @@ export default class Login extends Component {
       .then((data) => {
         console.log(data, "userRegister");
         if (data.status == "ok") {
-        
           window.localStorage.setItem("token", data.data);
           window.location.href = "./userdetails";
-        }
-        else
-        {
+        } else {
           alert("INVALID USERNAME OR PASSWORD");
         }
       });

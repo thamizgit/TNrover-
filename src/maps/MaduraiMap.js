@@ -12,6 +12,7 @@ function MaduraiMap() {
         <Row>
           <Col md={6}>
             <img
+            alt="madurai_map"
               className="img"
               height="auto"
               src={require("../images/maduraimap.jpg")}
@@ -56,15 +57,16 @@ function MaduraiMap() {
           <h1>Go By Category</h1>
         </div>
         <br></br>
-        <Category />
+        <Category city={"madurai"}/>
         <br></br>
-      </Container>
-
-      <Row className="fol" justify="around">
+        <Row className="fol" justify="around">
         <Col md={12} className="head">
           <h2>Follow Us For More Information</h2>
         </Col>
       </Row>
+      </Container>
+
+      
       <Footer />
     </div>
   );

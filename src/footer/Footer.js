@@ -6,16 +6,16 @@ function Footer() {
     <footer className="ro">
       <a
         className="insta"
-        href="https://instagram.com/_.shutter_eye._?igshid=YmMyMTA2M2Y="
+        href="https://www.instagram.com/tnroverservice/"
       >
         <Icon.Instagram></Icon.Instagram>
       </a>
 
-      <a className="face" href="">
+      <a className="face" href="#">
         <Icon.Facebook></Icon.Facebook>
       </a>
 
-      <a className="link" href="">
+      <a className="link" href="#">
         <Icon.Linkedin></Icon.Linkedin>
       </a>
 

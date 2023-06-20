@@ -21,7 +21,7 @@ export default class SignUp extends Component {
     e.preventDefault();
     const { fname, lname, email, password } = this.state;
     console.log(fname, lname, email, password);
-    fetch("http://localhost:5000/register", {
+    fetch("https://tnrover-backend.onrender.com/register", {
       method: "POST",
       crossDomain: true,
       headers: {
@@ -40,7 +40,6 @@ export default class SignUp extends Component {
       .then((data) => {
         console.log(data, "userRegister");
         if (fname != null) {
-        
           alert("Registered Successfully Go Back To Sign in");
         }
       });

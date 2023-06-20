@@ -3,7 +3,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import { Container, Row, Col } from "react-bootstrap";
 import "../module.css";
-import Navbar from "../navbar/Navbar";
 import { Link } from 'react-router-dom';
 import Footer from "../footer/Footer";
 
@@ -11,7 +10,6 @@ function Cities() {
   
   return (
     <div className="citiesmain">
-      <Navbar />
       <Container className="hov" fluid>
         <Row justify="around">
           <Col md={4}>
@@ -119,14 +117,15 @@ function Cities() {
             </Link>
           </Col>
         </Row>
-      </Container>
-
-      <br></br>
-      <Row className="fol" justify="around">
+        <br></br>
+      <Row className="fol">
         <Col md={12} className="head">
           <h2>Follow Us For More Information</h2>
         </Col>
       </Row>
+      </Container>
+
+      
       <Footer />
     </div>
   );

@@ -1,9 +1,9 @@
-import "../login.css";
+import "./login.css";
+import React from "react";
 import { useEffect, useState, useRef } from "react";
 import { FaCheck, FaTimes } from "react-icons/fa";
 import axios from "../api/axios";
 import { Link } from "react-router-dom";
-import React from "react";
 const USER_REGEX = /^[a-zA-Z][a-zA-Z0-9-_]{3,23}$/;
 const PASSWORD_REGEX =
   /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#%&*]).{8,24}$/;
@@ -18,12 +18,12 @@ const Register = () => {
 
   const [matchPwd, setMatchPwd] = useState("");
   const [validMatch, setValidMatch] = useState(false);
-  const [matchFocus, setMatchFocus] = useState(false);
-
+  
+  const [isLoading,setIsLoading] = useState(false);
   const [errMsg, setErrMsg] = useState("");
 
   const userRef = useRef();
-  const errRef = useRef();
+
 
   const [success, setSuccess] = useState(false);
 
@@ -54,10 +54,11 @@ const Register = () => {
 
     try {
       const body = {
-        username: user,
-        password: password,
+        user,
+        pwd: password,
       };
-      const res = await axios.post("/register", JSON.stringify(body), {
+      setIsLoading(true);
+      await axios.post("/register", JSON.stringify(body), {
         headers: {
           Accept: "application/json , text/plain",
           "Content-Type": "application/json",
@@ -75,11 +76,14 @@ const Register = () => {
         setErrMsg("Network error");
       }
     }
-  
+    finally {
+      setIsLoading(false);
+    }
   };
   return (
+    <main>
     <>
-      <section className={`App-register ${false ? `blur` : null}`}>
+      <section className={`App-register ${isLoading ? `blur` : null}`}>
         {success ? (
           <section>
             <h1>Success!</h1>
@@ -96,7 +100,7 @@ const Register = () => {
           </section>
         ) : (
           <>
-            {errMsg ? <p className="err-msg">{`${errMsg}`}</p> : null}
+            {errMsg && !userFocus ? <p className="err-msg">{`${errMsg}`}</p> : null}
             <h1>Register</h1>
             <form onSubmit={handleSubmit}>
               <label htmlFor="username">
@@ -186,21 +190,19 @@ const Register = () => {
                 placeholder="Enter Password Again"
                 value={matchPwd}
                 onChange={(e) => setMatchPwd(e.target.value)}
-                onFocus={() => setMatchFocus(true)}
-                onBlur={() => setMatchFocus(false)}
               />
 
-              <button
+              <button className="auth-btn"
                 type="submit"
                 disabled={
-                  !validName || !validPassword || !validMatch || false ? true : false
+                  !validName || !validPassword || !validMatch || isLoading ? true : false
                 }
               >
                 Sign Up
               </button>
 
               <p className="already">Already Registered?</p>
-              <Link className="sign-in" to="/login">
+              <Link className="sign-in" to="/signin">
                 Sign In
               </Link>
             </form>
@@ -208,6 +210,7 @@ const Register = () => {
         )}
       </section>
     </>
+    </main>
   );
 };
 export default Register

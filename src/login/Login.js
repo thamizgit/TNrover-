@@ -1,20 +1,30 @@
+import './login.css'
 import { useState, useEffect, useRef } from "react";
-import AuthContext from "../Context/AuthContext";
-import { Link } from "react-router-dom";
-import { useContext } from "react";
+import React from 'react';
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import axios from "../api/axios";
-import React from "react";
+import useAuth from '../hooks/useAuth';
 const Login = () => {
-  const { setAuth } = useContext(AuthContext);
+  const {setAuth } = useAuth();
   const [user, setUser] = useState("");
   const [password, setPassword] = useState("");
 
   const [errMsg, setErrMsg] = useState("");
 
   const [success, setSuccess] = useState(false);
-
+  const [isLoading,setIsLoading] = useState(false);
   const userRef = useRef();
   const errRef = useRef();
+
+  const navigate = useNavigate(); 
+  const location = useLocation();
+  var from;
+  if(location.state){
+    from = location.state.from.pathname;
+  }
+  else{
+    from = '/';
+  }
 
   useEffect(() => {
     userRef.current.focus();
@@ -26,12 +36,12 @@ const Login = () => {
     e.preventDefault();
 
     try {
-     
+      setIsLoading(true);
       const res = await axios.post(
         "/login",
         JSON.stringify({
-          username: user,
-          password: password,
+          user: user,
+          pwd: password,
         }),
         {
           headers: {
@@ -40,19 +50,15 @@ const Login = () => {
           }
         }
       );
-      console.log(res.data);
       const accessToken = res.data.accessToken;
-      const roles = res.data.roles;
-      console.log(accessToken, roles);
       setAuth({
         username: user,
-        password: password,
-        roles,
         accessToken
       });
       setUser("");
       setPassword("");
       setSuccess(true);
+      navigate(from, {replace:true});
     }
     catch (err) {
       if (!err.response)
@@ -63,11 +69,13 @@ const Login = () => {
         setErrMsg('Incorrect username or password')
       else
         setErrMsg('Login failed')
-      errRef.current.focus();
     }
-   
+    finally {
+      setIsLoading(false);
+    }
   };
   return (
+    <main>
     <section className="App-register">
       {success ? (
         <>
@@ -105,24 +113,25 @@ const Login = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
-            <button disabled={false ? true: false} type="submit">Sign In</button>
+            <button className='auth-btn' disabled={isLoading? true: false} type="submit">Sign In</button>
           </form>
           <p style={{ margin: "0.5rem", textAlign: "center" }}>
             Need an Account?
           </p>
-          <Link
+          <Link className='sign-up'
             style={{
               textDecoration: "underline",
               color: "whitesmoke",
               alignSelf: "center",
             }}
-            to="/"
+            to="/signup"
           >
             Sign Up
           </Link>
         </>
       )}
     </section>
+    </main>
   );
 };
 export default Login;

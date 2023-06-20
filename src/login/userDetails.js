@@ -14,7 +14,7 @@ export default class UserDetails extends Component {
     };
   }
   componentDidMount() {
-    fetch("http://localhost:5000/userData", {
+    fetch("https://tnrover-backend.onrender.com/userData", {
       method: "POST",
       crossDomain: true,
       headers: {
@@ -30,7 +30,6 @@ export default class UserDetails extends Component {
       .then((data) => {
         console.log(data, "userData");
         this.setState({ userData: data.data });
-        
       });
   }
   
@@ -44,7 +43,7 @@ export default class UserDetails extends Component {
       <h1 className="adjust">{this.state.userData.fname}</h1>
       <p  className="redirect">
         <a href="/cities">
-        <img src={require('../images/arrow.png')} width={80} />
+        <img alt="user" src={require('../images/arrow.png')} width={80} />
         <figcaption >Continue</figcaption>
         </a></p>
         

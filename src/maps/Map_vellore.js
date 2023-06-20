@@ -13,6 +13,7 @@ function Map_vellore() {
         <Row>
           <Col md={6}>
             <img
+            alt="vellore_map"
               className="img"
               height="650px"
               width="250px"
@@ -50,15 +51,16 @@ function Map_vellore() {
           <h1>Go By Category</h1>
         </div>
         <br></br>
-        <Category />
+        <Category city={"vellore"}/>
         <br></br>
-      </Container>
-      <br></br>
+        <br></br>
       <Row className="fol" justify="around">
         <Col md={12} className="head">
           <h2>Follow Us For More Information</h2>
         </Col>
       </Row>
+      </Container>
+      
       <Footer />
     </div>
   );

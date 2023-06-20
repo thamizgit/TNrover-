@@ -10,7 +10,7 @@ function Map_Erode() {
       <Container fluid>
         <Row>
           <Col md={6}>
-            <img
+            <img alt="erode_map"
               className="img"
               height="650px"
               width="250px"
@@ -45,15 +45,16 @@ function Map_Erode() {
           <h1>Go By Category</h1>
         </div>
         <br></br>
-        <Category />
+        <Category city={"erode"}/>
         <br></br>
-      </Container>
-      <br></br>
+        <br></br>
       <Row className="fol" justify="around">
         <Col md={12} className="head">
           <h2>Follow Us For More Information</h2>
         </Col>
       </Row>
+      </Container>
+      
       <Footer />
     </div>
   );

@@ -14,8 +14,8 @@ import ChennaiHotels from "./hotels/Chennaihotels";
 import ChennaiShops from "./malls/ChennaiShops";
 import ChennaiTheatres from "./theatres/ChennaiTheatres";
 import Chennaifunctionhall from "./functionhalls/Chennaifunctionhall";
-import Login from "./login/login_component";
-import SignUp from "./login/signup_component";
+import Login from "./login/Login";
+import SignUp from "./login/Register";
 import UserDetails from "./login/userDetails";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Cities from "./Cities/Cities";
@@ -68,18 +68,33 @@ import Vellore from "./Cities/Vellore";
 import Erode from "./Cities/Erode";
 import Tiruppur from "./Cities/Tiruppur";
 import Nilgiris from "./Cities/Nilgiris";
+import VelloreHospitals from "./hospitals/VelloreHospitals";
+import VelloreRestaurants from "./restaurants/VelloreRestaurants";
+import VelloreSchools from "./schools/VelloreSchools";
 
+import { AuthProvider } from "./Context/AuthContext";
+import RequireAuth from "./hooks/RequireAuth";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Router>
+      <AuthProvider>
       <Routes>
-        <Route exact path="/" element={<Login />} />
+        <Route exact path="/signin" element={<Login />} />
         <Route exact path="/userdetails" element={<UserDetails />} />
         <Route exact path="/signup" element={<SignUp />} />
         <Route exact path="/cities" element={<Cities />} />
-        <Route exact path="/home" element={<Home />} />
+        <Route exact path="/" element={<Home />} />
+
+        <Route element={<RequireAuth />}>
         <Route exact path="/chennai" element={<Chennai />} />
+        <Route exact path="/salem" element={<Salem />} />
+        <Route exact path="/madurai" element={<Madurai />} />
+        <Route exact path="/kovai" element={<Kovai />} />
+        <Route exact path="/cuddalore" element={<Cuddalore />} />
+        <Route exact path="/vellore" element={<Vellore />} />
+        </Route>
+
         <Route exact path="/chennai/hospitals" element={<ChennaiHospital />} />
         <Route exact path="/chennai/restaurants" element={<ChennaiRes />} />
         <Route exact path="/chennai/schools" element={<ChennaiSchools />} />
@@ -95,28 +110,27 @@ root.render(
         <Route exact path="/chennai/theatres" element={<ChennaiTheatres />} />
         <Route
           exact
-          path="/chennai/functionhall"
+          path="/chennai/functionhalls"
           element={<Chennaifunctionhall />}
         />
 
         <Route exact path="/about" element={<About />} />
 
-        <Route exact path="/salem" element={<Salem />} />
-        <Route exact path="/salem/hospital" element={<Salemhospital />} />
+
+        <Route exact path="/salem/hospitals" element={<Salemhospital />} />
         <Route exact path="/salem/restaurants" element={<Salemres />} />
         <Route exact path="/salem/schools" element={<Salemschools />} />
         <Route exact path="/salem/colleges" element={<Salemcolleges />} />
         <Route exact path="/salem/tourist" element={<Salemtourist />} />
-        <Route exact path="/salem/theatre" element={<Salemtheatre />} />
+        <Route exact path="/salem/theatres" element={<Salemtheatre />} />
         <Route
           exact
-          path="/salem/functionhall"
+          path="/salem/functionhalls"
           element={<Salemfunctionhall />}
         />
         <Route exact path="/salem/hotels" element={<SalemHotels />} />
         <Route exact path="/salem/shops" element={<SalemMalls />} />
 
-        <Route exact path="/madurai" element={<Madurai />} />
         <Route exact path="/madurai/hospitals" element={<MaduraiHospitals />} />
         <Route
           exact
@@ -135,7 +149,7 @@ root.render(
         />
         <Route exact path="/madurai/theatres" element={<MaduraiTheatres />} />
 
-        <Route exact path="/kovai" element={<Kovai />} />
+        
         <Route exact path="/kovai/hospitals" element={<KovaiHospitals />} />
         <Route exact path="/kovai/restaurants" element={<KovaiRestaurants />} />
         <Route exact path="/kovai/schools" element={<KovaiSchools />} />
@@ -150,7 +164,7 @@ root.render(
         />
         <Route exact path="/kovai/theatres" element={<KovaiTheatres />} />
 
-        <Route exact path="/cuddalore" element={<Cuddalore />} />
+        
         <Route
           exact
           path="/cuddalore/hospitals"
@@ -177,7 +191,11 @@ root.render(
         />
         <Route exact path="/cuddalore/shops" element={<CuddaloreShops />} />
 
-        <Route exact path="/vellore" element={<Vellore />} />
+        
+        <Route exact path="/vellore/hospitals" element={<VelloreHospitals />} />
+        <Route exact path="/vellore/restaurants" element={<VelloreRestaurants />} />
+        <Route exact path="/vellore/schools" element={<VelloreSchools />} />
+
 
         <Route exact path="/erode" element={<Erode />} />
 
@@ -185,6 +203,7 @@ root.render(
 
         <Route exact path="/nilgiris" element={<Nilgiris />} />
       </Routes>
+      </AuthProvider>
     </Router>
   </React.StrictMode>
 );
