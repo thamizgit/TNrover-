@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/TNrover-/precache-manifest.d4fdd311351d64facdb2808f631b59e2.js"
+  "/TNrover-/precache-manifest.58a6a2fe12ed6bf396832beed444aed8.js"
 );
 
 workbox.clientsClaim();
