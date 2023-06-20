@@ -17,7 +17,7 @@ import Chennaifunctionhall from "./functionhalls/Chennaifunctionhall";
 import Login from "./login/Login";
 import SignUp from "./login/Register";
 import UserDetails from "./login/userDetails";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Cities from "./Cities/Cities";
 
 import Salem from "./Cities/Salem";
