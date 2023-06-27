@@ -93,7 +93,7 @@ const Register = () => {
                 color: "whitesmoke",
                 textAlign: "center",
               }}
-              to="/login"
+              to="/signin"
             >
               Sign In
             </Link>
